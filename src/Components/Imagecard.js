@@ -24,6 +24,7 @@ class Imagecard extends React.Component {
         this.setState({span})
     }
 
+
     render(){
         return (
         <div style = {{gridRowEnd:`span ${this.state.span}`}}>

@@ -20,9 +20,16 @@ class SearchBar extends React.Component{
                     <label>Image search</label>
                     <input 
                     type="text" 
+                    placeholder= "search images..."
                     value = {this.state.text} 
                     onChange = {(e) => {this.setState({text:e.target.value})}}
                     />
+                    <button 
+                    className = "ui inverted secondary button" 
+                    onClick = {this.onFormSubmit} 
+                    style = {{marginTop:"10px"}}>Search
+                    <i className="search icon" style = {{marginLeft:"10px"}}></i>
+                    </button>
                 </div>
             </form>
         </div>
